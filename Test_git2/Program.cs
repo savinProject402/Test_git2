@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Test_git2
 {
@@ -10,13 +11,11 @@ namespace Test_git2
     {
         static void Main(string[] args)
         {
-            Console.Write("Your Name: ");
+            string input = File.ReadAllText("INPUT.TXT");
 
-            string name  = Console.ReadLine();
+            string output = input;
 
-            Console.WriteLine("Hello {0}!", name);
-
-            Console.ReadKey();
+            File.WriteAllText("OUTPUT.TXT" , output);
         }
     }
 }
