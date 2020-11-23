@@ -13,7 +13,13 @@ namespace Test_git2
         {
             string input = File.ReadAllText("INPUT.TXT");
 
-            string output = input;
+            string[] numbers = input.Split(' ');
+            int a = int.Parse(numbers[0]);
+            int b = int.Parse(numbers[1]);
+
+            int sum = a + b;
+
+            string output = sum.ToString();
 
             File.WriteAllText("OUTPUT.TXT" , output);
         }
