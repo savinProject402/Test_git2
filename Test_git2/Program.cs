@@ -10,7 +10,12 @@ namespace Test_git2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!");
+            Console.Write("Your Name: ");
+
+            string name  = Console.ReadLine();
+
+            Console.WriteLine("Hello {0}!", name);
+
             Console.ReadKey();
         }
     }
