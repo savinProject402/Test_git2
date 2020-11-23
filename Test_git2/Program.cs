@@ -10,7 +10,8 @@ namespace Test_git2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            Console.WriteLine("Hello!");
+            Console.ReadKey();
         }
     }
 }
